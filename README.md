@@ -1,6 +1,10 @@
 <a href="https://www.fee.org/">Foundation For Economic Education</a> podcasts.<br>
 
-<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="www.fee.org">Foundation For Economic Education</a> podcasts.<br>
+<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="www.fee.org">Foundation For Economic Education</a> podcasts:<br>
+
+- Words And Numbers<br>
+- Audio Experience<br>
+- Feecast<br>
 
 ^^^ To install this addon, either use the <a href="https://www.tvaddons.co/github-browser-kodi/">Kodi Github installer</a> addon or save the .zip file downloaded from the 'clone or download' button to somewhere the Kodi can access (e.g. network drive or USB stick). Then on the Kodi, go to addons > install from zip file.<br>
 
