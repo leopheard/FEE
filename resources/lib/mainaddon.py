@@ -2,30 +2,30 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-url1 = "https://itunes.apple.com/us/podcast/words-numbers/id1237781005" #WORDSANDNUMBERS
-url2 = "https://itunes.apple.com/us/podcast/fee-audioxp/id1375713889" #AUDIOEXPERIENCE
-url3 = "https://itunes.apple.com/us/podcast/feecast/id1400210600" #FEECAST
+url1 = "https://wordsandnumbers.libsyn.com/rss" #WORDSANDNUMBERS
+url2 = "http://feeaudioxp.libsyn.com/rss" #AUDIOEXPERIENCE
+url3 = "https://feecast.libsyn.com/rss" #FEECAST
 
 def get_soup1(url1):
     page = requests.get(url1)
     soup1 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup1))
     return soup1
-#get_soup1("https://itunes.apple.com/us/podcast/words-numbers/id1237781005")
+#get_soup1("https://wordsandnumbers.libsyn.com/rss")
 
 def get_soup2(url2):
     page = requests.get(url2)
     soup2 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup2))
     return soup2
-get_soup2("https://itunes.apple.com/us/podcast/fee-audioxp/id1375713889")
+get_soup2("http://feeaudioxp.libsyn.com/rss")
 
 def get_soup3(url3):
     page = requests.get(url3)
     soup3 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup3))
     return soup3
-get_soup3("ttps://itunes.apple.com/us/podcast/feecast/id1400210600")
+get_soup3("http://feecast.libsyn.com/rss")
 
 def get_playable_podcast1(soup1):
     subjects = []
@@ -70,7 +70,7 @@ def get_playable_podcast2(soup2):
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://fee.org/media/27631/audio-xp.jpg?mode=crop&width=250&height=250",
+                'thumbnail': "https://is5-ssl.mzstatic.com/image/thumb/Podcasts123/v4/54/a9/24/54a9246c-b68c-9f6f-6ebf-ab9ef46f03ee/mza_1457869927458728605.jpg/600x600bb.jpg",
         }
         subjects.append(item)
     return subjects

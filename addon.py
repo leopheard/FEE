@@ -3,9 +3,9 @@ from resources.lib import mainaddon
 
 plugin = Plugin()
 
-url1 = "https://itunes.apple.com/us/podcast/words-numbers/id1237781005" #WORDSANDNUMBERS
-url2 = "https://itunes.apple.com/us/podcast/fee-audioxp/id1375713889" #AUDIOEXPERIENCE
-url3 = "https://itunes.apple.com/us/podcast/feecast/id1400210600" #FEECAST
+url1 = "https://wordsandnumbers.libsyn.com/rss" #WORDSANDNUMBERS
+url2 = "http://feeaudioxp.libsyn.com/rss" #AUDIOEXPERIENCE
+url3 = "https://feecast.libsyn.com/rss" #FEECAST
 
 @plugin.route('/')
 def main_menu():
